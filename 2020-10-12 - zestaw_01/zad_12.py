@@ -1,5 +1,3 @@
-begin_at = int(input("Podaj początkowy wyraz ciągu (licz od 0): "))
-
 fib = [1]
 
 prev = 0
@@ -14,6 +12,6 @@ while elem < hard_limit:
     last = elem
     elem = prev + last
 
-for i in range(begin_at, len(fib) - 2):
+for i in range(0, len(fib) - 2):
     print(fib[i+1] / fib[i])
 
