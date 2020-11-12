@@ -107,7 +107,7 @@ def can_multiply_matrices(mtx0, mtx1):
 
 
 def multiply_matrices(mtx0, mtx1):
-    res = create_matrix(len(mtx0), len(mtx0[0]))
+    res = create_matrix(len(mtx0), len(mtx1[0]))
     for i in range(len(mtx0)):
         for j in range(len(mtx1[0])):
             temp = 0
