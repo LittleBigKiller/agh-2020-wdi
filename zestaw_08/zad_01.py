@@ -22,6 +22,9 @@ def clear_console():
     print("\033c", end="")
 
 
+#test
+
+
 def nwd_euclid(a, b):
 
     if a < b:       # Funkcja zakłada, że pierwsza z podanych jest większa
