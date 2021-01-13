@@ -56,25 +56,29 @@ def nwd_euclid(a, b):
 # nwd_euclid(150, 9)
 # nwd_euclid(2310, 13)
 
-clear_console()
-print("Format wykonywanej funkcji: NWD(a, b)")
+def main():
+    clear_console()
+    print("Format wykonywanej funkcji: NWD(a, b)")
 
-while True:
-    a = input("Podaj a: ")
-    if is_positive_int(a):
-        a = int(a)
-        break
+    while True:
+        a = input("Podaj a: ")
+        if is_positive_int(a):
+            a = int(a)
+            break
 
-    print("Nieprawidłowe dane.")
+        print("Nieprawidłowe dane.")
 
 
-while True:
-    b = input("Podaj b: ")
-    if is_positive_int(b):
-        b = int(b)
-        break
+    while True:
+        b = input("Podaj b: ")
+        if is_positive_int(b):
+            b = int(b)
+            break
 
-    print("Nieprawidłowe dane.")
+        print("Nieprawidłowe dane.")
 
-print('\nWykonywanie NWD({0}, {1}):\n'.format(a, b))
-nwd_euclid(a, b)
+    print('\nWykonywanie NWD({0}, {1}):\n'.format(a, b))
+    nwd_euclid(a, b)
+
+if __name__ == "__main__":
+    main()
